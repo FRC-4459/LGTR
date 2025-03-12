@@ -1,30 +1,26 @@
 ---
 title: 4459 Swerve Devlog
 tags:
-  - "#area/robotics"
+  - "#project/LGTR/programming"
   - "#writeup"
+start: 12/20/2024
+author: Kingston V.
 ---
+This guide is meant to help through all of the electrical and programming work for setting up a [Swerve Drive Specialties mk4i drivetrain](https://www.swervedrivespecialties.com/products/mk4i-swerve-module), and a point of reference for if anything breaks down.
 
-Written by Kingston Vastine. Started 12/20/24, a little while before 2025 season.
-Put this file in a markdown viewer like Obsidian or Github Web to view the formatted text.
-
-Firstly, the time that I'm beginning this devlog after finally getting the CAN loop working for all the components. At least I think I have.
-
-This guide is meant to help through all of the electrical and programming work for setting up a [Swerve Drive Specialties mk4i drivetrain](https://www.swervedrivespecialties.com/products/mk4i-swerve-module), and a point of reference for if everything breaks down.
-
-The mechanical part isn't included in here, because it's actually fairly easy - the [Instruction Manual](https://drive.google.com/file/d/1FBRBFIMH0lY_B9EJXfujerzmCWr5-Bwu/view) (it's at the bottom of the mk4i module's store page). Securing the modules together is a matter of cutting and drilling 4 identical 2x1 aluminum tubes and securing them to the module holes with bolts. [Here](https://cad.onshape.com/documents/29d54cac6bf4f98970e88e45/w/798c27bba961378971824544/e/67083672ee2e8a9a5ae9414c) is an onshape document that shows you how to do this, as well as the measurements for a belly pan.
+The mechanical part isn't included in here, because it's actually fairly easy - the [Instruction Manual](https://drive.google.com/file/d/1FBRBFIMH0lY_B9EJXfujerzmCWr5-Bwu/view) (it's at the bottom of the mk4i module's store page) has just about everything you need to put it together. Securing the modules together is a matter of cutting and drilling 4 identical 2x1 aluminum tubes and securing them to the module holes with bolts. [Here](https://cad.onshape.com/documents/29d54cac6bf4f98970e88e45/w/798c27bba961378971824544/e/67083672ee2e8a9a5ae9414c) is an onshape document that shows you how to do this, as well as the measurements for a belly pan.
 ## Prelude: Our Swerve Drive
 
 To begin, there are a couple ways in which the swerve drive I'm currently working on differs from any other mk4i drivetrain.
 - The side length (length of the aluminum tubes, as shown on the onshape document) are 18.25" instead of 21.5". We had to work with the little bit of aluminum we already had. This will affect the programming, but should work just fine.
 - The bolts in the modules were not secured using loctite threadlocker, though the assembly guide recommends that you do so. It would have added too much time to the assembly process, and we barely got the chassis done under the wire as is. I hope to stress test the chassis as soon as possible to make sure that if this causes an issue we'll catch it before competition. I'll update this bullet if there are complications.
-- We assembled modules fitted for Kracken x60 motors, and yet we only had Rev NEOs to go with them. This is because our anonymous sponsor ordered the wrong modules from the website. Seemingly, the NEOs work, though they are secured to the modules with 2 bolts instead of 3. If there is an issue with transmission of motion from the motors to the gears in the modules, this would be why. However, it hasn't caused any issues yet.
+- We assembled modules fitted for Kraken x60 motors, and yet we only had Rev NEOs to go with them. This is because our anonymous sponsor ordered the wrong modules from the website. Seemingly, the NEOs work, though they are secured to the modules with 2 bolts instead of 3. If there is an issue with transmission of motion from the motors to the gears in the modules, this would be why. However, it hasn't caused any issues yet.
 - The modules were secured to the tubing with 2 bolts on each corner, instead of 3. Once again, we were under tight time constrains (kind of our bad), and the drill press didn't cut quite straight enough for the bolts to thread through perfectly every time. This doesn't seem like it will cause any issues - the chassis seems quite sturdy as is - but it's definitely noteworthy. 
 
 Those are the mechanical aspects of the build that may cause issues for us in the future. If you hear a weird noise, or something breaks, probably pay attention to these areas first.
 
 Here are the specs of the build:
-- mk4i modules with billet wheels and an L2 gear ratio, for kracken x60s (  :(  )
+- mk4i modules with billet wheels and an L2 gear ratio, for kraken x60s
 - 8 base rev NEOs (not neo vortexes)
 - 8 rev Spark MAXes
 - 4 CTRE CANcoders
