@@ -2,7 +2,7 @@
 title: Java and Object Oriented Programming
 tags:
   - "#project/LGTR/programming"
-start: 3/11/2025
+date: 2025-03-11
 author: Kingston V.
 ---
 Before starting to program for FRC, you need to grasp the basics (at least) of Java and Object Oriented Programming. This will by no means be a complete guide - a better curriculum can be found on [Codecademy](https://www.codecademy.com/learn/learn-java), [MOOC](https://java-programming.mooc.fi/) (this one is praised a LOT), or [this youtube playlist](https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19). This document will be a quick, basic layout of the java features you'll need to use for FRC - more of a reference guide then a learning resource. 

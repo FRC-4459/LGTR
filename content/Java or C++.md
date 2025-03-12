@@ -3,7 +3,7 @@ title: Java or C++?
 tags:
   - "#project/LGTR/programming"
   - "#opinion"
-start: 3/11/2025
+date: 2025-03-11
 author: Kingston V.
 ---
 WPILib programming has long supported C++ as a programming language for the RIO and FRC vendor APIs. For a long time, C and C++ have been standard languages in robotics for a variety of historical and technical reasons. In 2005, WPILib introduced java as a language to program FRC robots in.

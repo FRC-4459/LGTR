@@ -3,7 +3,7 @@ title: Other Reading
 tags:
   - "#project/LGTR/misc"
   - "#resource"
-start: 3/11/2025
+date: 2025-03-11
 author: Kingston V.
 ---
 Here are a variety of resources written or published by other FRC teams or groups that don't cleanly have a place in any of the other pages here.

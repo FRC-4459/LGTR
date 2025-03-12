@@ -3,7 +3,7 @@ title: 4459 Swerve Devlog
 tags:
   - "#project/LGTR/programming"
   - "#writeup"
-start: 12/20/2024
+date: 2024-12-20
 author: Kingston V.
 ---
 This guide is meant to help through all of the electrical and programming work for setting up a [Swerve Drive Specialties mk4i drivetrain](https://www.swervedrivespecialties.com/products/mk4i-swerve-module), and a point of reference for if anything breaks down.

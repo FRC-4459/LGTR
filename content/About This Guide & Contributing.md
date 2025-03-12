@@ -2,7 +2,7 @@
 title: About This Guide & Contributing
 tags:
   - "#project/LGTR/misc"
-start: 3/11/2025
+date: 2025-03-11
 author: Kingston V.
 ---
 ## How does this guide work?
@@ -27,7 +27,7 @@ The only formatting rule I'll enforce is requiring authors to use the YAML [fron
 ---
 title: Bumper Construction Guide
 tags: #project/LGTR/mechanical
-start: 03/11/2025
+date: 03/11/2025
 author: Lebron J.
 ---
 ```
@@ -38,7 +38,7 @@ Here's what you need to know for each field:
 | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | title  | The title of the note. Can be anything. This will be displayed at the head of the page when published.                                                                                                                                                                                                                                                                                                           |
 | tags   | A tag to categorize the note. You only *have* to include one tag. That one tag starts with `#project/LGTR/`, and after the backslash should be one of the categories laid down in the index in all lowercase. Examples include `#project/LGTR/misc` and `#project/LGTR/mechanical`. You can also use other tags to categorize your pages, like `#guide`, `#resource`, or anything else, but this isn't required. |
-| start  | The date that the author started working on the file.                                                                                                                                                                                                                                                                                                                                                            |
+| date   | The date that the author started working on the file in MM-DD-YYYY format                                                                                                                                                                                                                                                                                                                                        |
 | author | The name of the main author of the note. If there are multiple authors, you can add each one by separating the names with commas.                                                                                                                                                                                                                                                                                |
 
 
