@@ -208,7 +208,7 @@ Loops are the primary way to repeat code many times in your program. Most often,
 To fix this, the `step` block is run once each time the `for` block's `code` finishes executing. Anything written into the `step` block should compile, but typically the statement there modified your `counter` in some way. An example step looks like this: `for (int i = 0; i < 10; i++) {code}`, where `i++` increases `i` by one. This loop will now run 10 times and stop after the 10th.
 
 Here is a flowchart explaining for loop control flow:
-![[1679044531720-1-01 (13).png]]
+![[boolchart.png]]
 
 And here are two examples of for loops being used:
 
@@ -285,4 +285,4 @@ public class Example {
 
 Congrats! You know the basics of Java programming. This is 95% of what you'll need to program FRC robots - but there is still some use of advanced concepts like polymorphism and inheritance, lambda functions, and event loops. These topics are worth researching yourself but they will also get brief explanations in their relevant sections in the [[Command Based Programming]] article.
 
-If you believe you already have a solid grasp of the fundamentals of programming in Java, you can skip straight to [[WPILib]] - if not, I'd encourage you to build the [[Project - Vending Machine Simulation]] before moving on.
+If you believe you already have a solid grasp of the fundamentals of programming in Java, you can skip straight to [[WPILib and Game Tools]] - if not, I'd encourage you to build the [[Project - Vending Machine Simulation]] before moving on.

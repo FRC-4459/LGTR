@@ -8,7 +8,7 @@ author: Kingston V.
 ---
 WPILib programming has long supported C++ as a programming language for the RIO and FRC vendor APIs. For a long time, C and C++ have been standard languages in robotics for a variety of historical and technical reasons. In 2005, WPILib introduced java as a language to program FRC robots in.
 
-At the time of writing, Python3 is also being incorporated into WPILib - but neither the base WPILib libraries nor the vendor libraries are complete in python whatsoever.
+At the time of writing, Python3 is also being incorporated into WPILib - but the vendor libraries are incomplete in Python.
 
 So, what do you need to know when considering which language to use?
 # The answer is Java.

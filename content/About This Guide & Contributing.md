@@ -97,10 +97,10 @@ This will push your changes to the GitHub repo. On the main repo, a workflow sho
 
 Like the above method, if you're not part of team 4459's organization, you'll have to create your own fork of the repo and make a pull request when you finish editing. Otherwise, the process is the same:
 
-Go to https://github.com/FRC-4459/LGTR and navigate into the /content folder. ![[Pasted image 20250311105753.png]]
+Go to https://github.com/FRC-4459/LGTR and navigate into the /content folder. ![[ghcontent.png]]
 
 Click the "add file" button in the top-right and then click "create new file".
-![[Pasted image 20250311105853.png]]
+![[newmd.png]]
 Name your file anything with a .md extension. Then, write markdown directly into the file content box. If you want to look at what the file looks like when rendered, just go to the "preview" pane. When you're done, hit "commit changes" and leave a short (< 1 sentence) commit message describing what you wrote.
 
 To make a pull request from outside of our organization, see [Creating a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
