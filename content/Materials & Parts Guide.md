@@ -155,11 +155,54 @@ Spacers come in tons of different shapes and sizes, and their job is to take up 
 
 #### [MAXSpline](https://www.revrobotics.com/rev-21-2520/)
 
-![[REV-21-2520-MAXHubExtrusion-ISO-FINAL__01788.webp]]
+![[maxspline.webp]]
 
 REV's MAXSpline is a high-durability, high-torque alternative to hex within their ION build system. MAXSpline is reliable and robust, but requires you to plan your entire motion transmission system - collars, sprockets/pulleys/gears, bearings, etc - around its unconventional shape (you'll have to buy spline-specific hardware). However, if your team is comfortable with locking themselves into this system for a mechanism or entire robot, MAXSpline is a solid choice.
 
+
+
+
+## Motors & Motion
+
+Your mechanism will need a motor and a motion transmission system. There are tons of motors to choose from in the FRC ecosystem - choose a 1-2 types within your price range and pick up ~8-10 total. Choosing a power transmission system between gears, sprockets, and pulleys and implementing it well is a common source of headache and design flaws, so it's important to understand what you're working with.
+
+#### CIM
+
+![[cim.jpg]]
+
+CIM Motors are the most tried-and-true motor in the history of FRC. They come in different sizes - pictured above is a typical 2.5" CIM, the very motor that's shipped with the KOP tank drivetrain. These motors feature a keyed shaft for use with a machine key and keyed gear. CIMs are durable, reliable, and cheap, but not the most powerful. The power that they put out is weaker compared to new, fancier motors like NEOs and Falcons. The biggest con to CIMs, though, is that they are simple brushed motors with no included encoders or sensors. These motors have to position tracking, no servo capabilities, no included encoder, etc without adding it on yourself. This makes them excessively difficult to use for most holonomic drivetrains like swerve and any mechanism that requires detailed position tracking. For simple applications where you don't need to PID control or fine-tune your motors in software, CIMs are a fantastic way to cut costs, but often spending the extra money on a fancier money is worth it.
+
+Notably, [Playing With Fusion](https://www.playingwithfusion.com/productview.php?pdid=99) makes a modified CIM motor that includes the integrated software sensors expected out of new FRC motors, called a **Venom**. While the Venom isn't a particularly bad choice for any given application, it's generally worth spending slightly more money on a NEO or CTRE motor due to the amount of testing that those motors have gone through and the availability of product support.
+
+#### NEO Brushless
+
+
+![[neo1-1.webp]]
+
+
+
+#### NEO Vortex
+
+
+
+#### Machine Keys
+
+
+
+#### Retaining Rings
+
+
+
+#### Falcon 500
+
+
+
+#### Kraken x44 & x60
+
+
+
 #### Gears
+
 
 
 #### Chain & Sprocket
@@ -173,8 +216,6 @@ REV's MAXSpline is a high-durability, high-torque alternative to hex within thei
 #### Twine & Pulley
 
 
-#### Motors
-
 
 #### Gearboxes
 
@@ -184,26 +225,51 @@ REV's MAXSpline is a high-durability, high-torque alternative to hex within thei
 
 # Fasteners
 
-#### Socket Head Bolts
+#### Socket Cap Head Bolts
 
+![[sockethead.avif]]
+
+Socket head cap screws are the bread and butter fastener on most modern FRC robot. They're typically 10-32 screws driven by 5/32" hex keys. You can find these in a variety of sizes (measured from bottom of cap to tip of screw) on [REV](https://www.revrobotics.com/10-32-Socket-Head-Screws/). When purchasing these screws, purchase the +1/4" sizes. For example, if you expect to work with lots of 2x1", purchase 1 1/4" and 2 1/4" screws - 1 or 2 inch screws will be too short to put nuts on!
+
+As mentioned, you want to get \#10-32 screws for use in FRC - the first number is the *root diameter* of the screw, the diameter of the shaft with no threads, and the second number is the thread density (32 threads/inch). The first number doesn't directly convert to a number that makes sense - in this case, #10 is shorthand for a 3/16" root diameter. Given this system, \#10-24 screws can also work on your robot in a pinch, but try to stock \#10-32 bolts.
+
+When drilling your own holes for these screws, a #21 bit is ideal - this will create a hole small enough that the threads will engage with the material for a tight fit with no extra fastening hardware. A #9 or 5/32" bit will create a tight fit tap hole, which means the threads will *not* engage with the material. You will need extra fastening hardware (i.e. nuts) but there won't be much give in the tap.
 
 #### Wood Screws
 
+![[woodscrew.jpg]]
 
+Wood screws have a pointed tip and bigger threads than metal bolts do. They're common to see in tons of labs and workshops. Don't use wood screws for anything except wood on wood.
 
-#### Standard Screws
+#### Loctite / Thread Locker
 
+![[loctite.jpg]]
+
+Thread lockers, most commonly Loctite, are compounds that you spread on the threads of (typically) bolts or screws to prevent them from loosening due to vibration where nuts are not applicable. The most common use of Loctite for FRC is in gearboxes and swerve drive modules.
+
+Loctite comes in four varieties - purple (low strength), blue (medium strength), red (high strength), and green (fastener adhesive). Red Loctite will prevent you from ever being able to disassemble your mechanism again, so you may not want to use it on the robot. Purple may be too low strength for some high-strain applications, but would work in many places on a robot. Often, blue Loctite is ideal. Green Loctite is most commonly used to secure absolute encoder magnets in their shafts, but can be used for a variety of pins and pre-assembled fastener solutions. Pick up Blue 242 as your typical thread locker and Green 609 for encoder magnets or electrical components.
+
+When applying Loctite, don't use too much. Use your finger or a Q-tip to massage a small amount into the threads on the end of the screw (or wherever it makes contact with the material). Using too much solution can cause the screw to be adhered onto close hardware like spacers. A thin layer across the area is best.
 
 #### Nuts
 
+![[jamnut.jpg]]
 
+Standard hex nuts are a flat, low-profile fastener that you screw onto the threads of a bolt. For this reason, they're referred to with the same specifications of screws - a diameter and thread spacing number. These simple nuts have a critical weakness - repeated vibration tends to loosen them over time, even if they were well-tightened. Try to avoid using simple nuts on your robot, and opt for nylock nuts instead.
 
 #### Nylock Nuts
 
+![[nylock.jpg]]
 
-
+Nylock nuts are taller nuts with a ring of nylon near the threads for shock absorption purposes. These tend to hold much better than regular nuts through resistance, and so nylock nuts are the preferred nut for FRC robots.
 #### K-Lock Nuts
 
+![[knut.jpg]]
 
+K-Lock nuts, or Keps lock nuts, are an alternative to nylock nuts that uses a freely rotating metal spacer instead of nylon. These are common in electronics applications and also acceptable to use on your robot.
 
 #### Bolt Spacers
+
+![[boltspacer.avif]]
+
+These bolt spacers are used to create a fixed distance between two things screwed onto a bolt. They can be 3d printed and are very common in systems like swerve modules. 

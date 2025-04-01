@@ -12,9 +12,8 @@ This is currently a work in progress, started just a little while ago. Check bac
 
 ## Mechanical
 
-- [[Tools]]
 - [[Materials & Parts Guide]]
-- [[Common Mechanical Supplies]]
+- [[Tools Guide]]
 
 ## Electrical
 
@@ -24,7 +23,7 @@ This is currently a work in progress, started just a little while ago. Check bac
 
 This section relates to the software side of the robot control systems - firmware flashing, the RIO, the programming you'll be doing, etc. If you have prior knowledge of Java or OOP, that's great! If you don't, that's alright too.
 
-While this guide seeks to go into fine detail for some of these concepts and teach about common beginner mistakes, the [WPILib Docs]() are so excellent and complete that you could certainly learn 99% of what you need to know there.
+While this guide seeks to go into fine detail for some of these concepts and teach about common beginner mistakes, the [WPILib Docs]() are so excellent and complete that you could learn 99% of what you need to know there.
 
 - [[Java or C++]]
 - [[Java and Object Oriented Programming]]
